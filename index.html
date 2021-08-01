@@ -1,41 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
     <title>Sulphuric Bench Shop</title>
-    <base href="/shop/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="android-chrome-512x512.png"
-    />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-32x32.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <style>
-      @import url(https://fonts.googleapis.com/css2?family=PT+Sans&display=swap);
-      @import url(https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap);
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="styles.e49a3fb7f4a51bf48993.css"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript
-      ><link rel="stylesheet" href="styles.e49a3fb7f4a51bf48993.css"
-    /></noscript>
-  </head>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-32x32.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+  <style>@import url(https://fonts.googleapis.com/css2?family=PT+Sans&display=swap);@import url(https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap);*{margin:0;padding:0;box-sizing:border-box;}</style><link rel="stylesheet" href="styles.e49a3fb7f4a51bf48993.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.e49a3fb7f4a51bf48993.css"></noscript></head>
   <body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "116585433584917");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <app-root></app-root>
-    <script src="runtime.bf80b41898c7ad5d4bb0.js" defer></script>
-    <script src="polyfills.9958d013bd32f1a48171.js" defer></script>
-    <script src="main.ff936beb8c5a683d4929.js" defer></script>
-  </body>
-</html>
+  <script src="runtime.bf80b41898c7ad5d4bb0.js" defer></script><script src="polyfills.9958d013bd32f1a48171.js" defer></script><script src="main.0aa170d0dc9519abc414.js" defer></script>
+
+</body></html>
